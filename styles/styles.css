@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;    
+    background: var(--background-light);
+    font-size: 1.6rem;
+}
+
+main {
+    flex: 1;
+}
+
+:root {
+
+    --primary-color: #0494c7;
+    --secundary-color : #155F9B; 
+
+    --text-primary: #FFFFFF;
+    --background-card: #91BB25 ;
+
+    --background-light: #edf1f2;
+    --background-dark: #333333;
+
+    font-size: 62.5%;
+}
+
+
+.cabecalho {
+    background: var(--primary-color);
+    color: var(--text-primary);
+}
+
+ul li a {
+    color: var(--text-primary);
+    text-transform: uppercase;
+    transition: all .7s;
+}
+
+ul li a:hover {
+    color: var(--text-primary);
+    background-color: var(--background-card);
+}
+
+#form-search {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+#portalSei .form-control::placeholder {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background: #0494c7;
+}
+
+.menu-hamburguer {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.date {
+    color: var(--secundary-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.date .image {
+    border: 1px solid var(--background-card);
+    transition: all 0.7s ease-in-out;
+}
+
+.date .image:hover {
+    background: var(--background-card);
+    transform: scale(1.2);
+}
+
+.date img {
+    width: 3.2rem;
+    height: 3.2rem;    
+}
+
+.container-logo-sei {
+    text-align: center;
+}
+
+.container-logo-sei img {
+    width: 23rem;    
+}
+
+.container-logo-sei h1 {
+    color: var(--secundary-color);
+    margin-bottom: 2rem;
+}
+
+.cards {    
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--background-card);
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 17rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;   
+    
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.cards .card:hover {
+    transform: scale(1.1);
+}
+
+.cards:hover :not(.card:hover){
+    opacity: .7;
+}
+
+.card h5 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+/*  Publicação */
+
+.publicacao {
+    display: flex;
+    margin-top: 3.2rem;
+    justify-content: center;
+}
+
+.publicacao h2 {
+    color: var(--secundary-color);
+    text-transform: uppercase;    
+}
+
+footer {
+    background: var(--primary-color);
+
+}
+
+footer .rodape {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape p {
+    color: var(--text-primary);
+    font-weight: 500;
+    padding-top: 1.6rem;
+}
+
+/* estilizando o modo dark */
+
+.dark {
+    background: #333333;
+}
+
+.dark .navbar,
+.dark .card,
+.dark footer {
+    background: #333333;
+}
+
+.dark h1,
+.date h2,
+.dark h3,
+.dark h5,
+.dark a,
+.dark .navbar-brand,
+.dark .date,
+.dark .publicacao h2,
+.dark p {
+    color: #91BB25 !important;
+}
+
+.dark .card, .dark .nav-item
+ {
+    border: 1px solid #91BB25;
+}
+
+.dark #portalsei .form-control {
+    outline: 2px solid #91BB25;
+}
+
+/* incrementar e decrementar o tamanho da font */
+
+.increment-font,
+.increment-font .navbar-brand,
+.increment-font .publicacao h2,
+.increment-font .card h5
+{
+    font-size: 2.4rem;
+}
+
+.decrement-font,
+.decrement-font .navbar-brand,
+.decrement-font .publicacao h2,
+.decrement-font .card h5
+{
+    font-size: 1.3rem;
+}
+

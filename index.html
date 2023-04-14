@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="\bootstrap-4.6.2-dist\bootstrap-4.6.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Sei - Aguas Lindas de Goiás</title>
+
+</head>
+<body id="body">
+    <header>
+        <nav class="navbar navbar-expand-lg cabecalho">
+            <div class="container"> 
+                <div class="navbar-brand">
+                    PREFEITURA DE ÁGUAS LINDAS DE GOIAS
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portalsei">
+                    <img class="menu-hamburguer" src="./assets/list.svg" alt="Menu" srcset="">
+                </button>
+    
+                <div class="collapse navbar-collapse " id="portalsei">
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blank">Sobre o SEI!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blank">Cidadão</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blank">Servidor</a></li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input class="form-control ml-2 " type="search" placeholder="Pesquisar..." id="form-search">
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container date text-right">
+            Aguas Lindas de Goias, 23 de Março de 2023 
+            <button class="image" onclick="incrementFont()"><img src="./assets/incrementa.svg" alt=""></button>
+            <button class="image" onclick="fontPadrao()"><img src="./assets/padrao.svg" alt=""></button>
+            <button class="image" onclick="decrementFont()"><img src="./assets/decrementa.svg" alt=""></button>
+            <button class="image" onclick="temaDark()"><img src="./assets/contraste.png" alt=""></button>            
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container container-logo-sei">
+                <div class="logo-sei">
+                    <img class="img-fluid" src="./assets/Logo Sei.png" alt="Logo do sei" srcset="">
+                </div>
+                <div class="text-sei">
+                    <h1>Bem vindo ao portal de informação do SEI!</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="container cards">
+
+                <div class="card">
+
+                        <h5 >Acessar o SEI</h5> 
+
+                </div>
+
+                <div class="card">
+
+                        <h5 >Legislação</h5> 
+
+                </div>
+
+                <div class="card">
+
+                    <h5 >Cadastro de Usuario Externo</h5> 
+
+                </div>
+
+                <div class="card">
+
+                        <h5 >Usuario Externo</h5> 
+
+                </div>
+
+
+        </section>
+
+        <section class="publicacao">
+            <h2>Publicações</h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container rodape">
+            <p>Copyright ©2020 All rights reserved | Feito pela Prefeitura Municipal de Águas Lindas de Goiás </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="\bootstrap-4.6.2-dist\bootstrap-4.6.2-dist\js\bootstrap.min.js"></script>
+    <script src="./javascript/script.js"></script>
+    
+</body>
+</html>
