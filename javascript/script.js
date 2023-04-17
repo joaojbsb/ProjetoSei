@@ -28,5 +28,5 @@ function fontPadrao() {
 
     font.classList.remove('increment-font');
     font.classList.remove('decrement-font');
-}
+};
 

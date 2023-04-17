@@ -71,7 +71,7 @@ ul li a:hover {
 
 .date {
     color: var(--secundary-color);
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: end;
@@ -111,8 +111,8 @@ ul li a:hover {
     color: var(--text-primary);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: center;
+    gap: 2rem;
     padding: 0;
     flex-wrap: wrap;
 }
@@ -147,9 +147,32 @@ ul li a:hover {
 /*  Publicação */
 
 .publicacao {
+    padding: 0;
+    color: var(--secundary-color);
+}
+
+.text-publicacao {
     display: flex;
+    flex-direction: column;
     margin-top: 3.2rem;
     justify-content: center;
+    align-items: center;
+}
+
+.editais {
+    display: flex;
+    justify-content: right;
+    gap:2rem;   
+}
+
+.cursos {
+    width: 50%;
+    background: red;
+}
+
+.leis {
+    width: 50%;
+    background: gray;
 }
 
 .publicacao h2 {
@@ -164,7 +187,7 @@ footer {
 
 footer .rodape {
     display: flex;
-
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -226,3 +249,20 @@ footer .rodape {
     font-size: 1.3rem;
 }
 
+
+@media (max-width: 995px) {
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 755px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
